@@ -12,7 +12,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --magenta: #FF00FF;
+    --primaryColor: #800125;
+    --secondaryColor: #ffde05;
     --black: #393939;
     --grey: #3a3a3a;
     --gray: var(--grey);
