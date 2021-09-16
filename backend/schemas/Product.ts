@@ -23,7 +23,7 @@ export const Product = list({
       },
     }),
 
-    Status: select({
+    status: select({
       options: [
         {
           label: 'Draft',
