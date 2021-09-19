@@ -2,19 +2,14 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Nav from './Nav';
 
-const Logo = styled.h1`
-  font-size: 4rem;
-  margin-left: 2rem;
+const Logo = styled.div`
+  margin-left: 7rem;
+  margin-top: 10px;
   position: relative;
   z-index: 2;
-  background: var(--primaryColor);
-  transform: skew(-7deg);
-  box-shadow: var(--bs);
-  a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
+  img {
+    height: 150px;
+    cursor: pointer;
   }
 `;
 
@@ -38,9 +33,14 @@ export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
-        <Logo>
-          <Link href="/">Acute Angle Accessories</Link>
-        </Logo>
+        <Link href="/">
+          <Logo>
+            <img
+              src="../static/AcuteAngleLogo.png"
+              alt="Acute Angle Accessories"
+            />
+          </Logo>
+        </Link>
         <Nav />
       </div>
       <div className="sub-bar">
